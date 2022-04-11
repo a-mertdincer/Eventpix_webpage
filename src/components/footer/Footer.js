@@ -98,7 +98,7 @@ function DemoFooter() {
               <Nav className="nav-footer justify-content-end">
                 <NavItem>
                   <NavLink
-                    href="https://www.creative-tim.com/presentation?ref=adspr-footer"
+                    href=""
                     target="_blank"
                   >
                     About Us
@@ -106,7 +106,7 @@ function DemoFooter() {
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    href="https://www.creative-tim.com/blog?ref=adspr-footer"
+                    href=""
                     target="_blank"
                   >
                     Blog
@@ -114,7 +114,7 @@ function DemoFooter() {
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    href="https://www.creative-tim.com/license?ref=adspr-footer"
+                    href=""
                     target="_blank"
                   >
                     License

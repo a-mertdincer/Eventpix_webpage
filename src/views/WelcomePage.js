@@ -12,6 +12,7 @@ import Header4 from "../components/headers/Header4.js";
 import Feature6 from "../components/features/Feature6.js";
 import Feature6_1 from "../components/features/Feature6_1.js";
 import Feature1 from "../components/features/Feature1.js";
+import Pricing1 from "../components/pricings/Pricing1.js";
 import Pricing5 from "../components/pricings/Pricing5.js";
 
 function LandingPage() {
@@ -31,7 +32,7 @@ function LandingPage() {
         <Feature6 />
         <Feature6_1 />
         <Feature1 />
-        <Pricing5 />
+        <Pricing1 />
         <Footer />
       </div>
     </>

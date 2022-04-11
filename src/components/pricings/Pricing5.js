@@ -31,11 +31,17 @@ function Pricing5() {
         }}
       >
         <Container className="pt-5">
+        <Row>
+            <Col className="mx-auto text-center mb-5" md="6">
+              <h2 className="title">Pick the best plan for you</h2>
+              <h4 className="description">
+                You have Free Unlimited Updates and Premium Support on each
+                package.
+              </h4>
+              <div className="section-space"></div>
+            </Col>
+          </Row>
           <Row>
-            <Col className="d-flex justify-content-center flex-column" md="4">
-              <h3 className="display-3 mt-3">
-                Choose a plan for your next project
-              </h3>
               <Nav className="nav-pills-primary my-4" pills role="tablist">
                 <NavItem>
                   <NavLink
@@ -46,7 +52,7 @@ function Pricing5() {
                       setActiveTab("tab1");
                     }}
                   >
-                    Cheaper
+                    Monthly
                   </NavLink>
                 </NavItem>
                 <NavItem>
@@ -58,39 +64,104 @@ function Pricing5() {
                       setActiveTab("tab2");
                     }}
                   >
-                    Expensive
+                    Annually
                   </NavLink>
                 </NavItem>
               </Nav>
               <p className="lead mt-0">
               All of our plans include every feature above. Need more or less storage? You can constantly update your plan later.
               </p>
-            </Col>
-            <Col className="ml-auto mr-auto" lg="7" md="8">
+            <Col className="ml-auto mr-auto" lg="7" md="6">
               <TabContent className="tab-space" activeTab={activeTab}>
                 <TabPane tabId="tab1">
                   <Row>
                     <Col md="6">
+                    <Card className="card-pricing bg-white border-0 text-center mb-4">
+                <CardHeader className="bg-transparent">
+                  <h6 className="text-uppercase ls-1 text-white py-3 mb-0">
+                    Starter
+                  </h6>
+                </CardHeader>
+                <CardBody>
+                  <div className="display-2 text-white">₺50.00</div>
+                  <span className="text-white">per month</span>
+                  <ul className="list-unstyled my-4">
+                    <li>
+                      <div className="d-flex align-items-center">
+                        <div>
+                          <div className="icon icon-xs icon-shape bg-white shadow rounded-circle text-info">
+                            <i className="ni ni-book-bookmark"></i>
+                          </div>
+                        </div>
+                        <div>
+                          <span className="pl-2 text-sm text-white">
+                            Complete documentation
+                          </span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="d-flex align-items-center">
+                        <div>
+                          <div className="icon icon-xs icon-shape bg-white shadow rounded-circle text-info">
+                            <i className="ni ni-diamond"></i>
+                          </div>
+                        </div>
+                        <div>
+                          <span className="pl-2 text-sm text-white">
+                            Working materials in Sketch
+                          </span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="d-flex align-items-center">
+                        <div>
+                          <div className="icon icon-xs icon-shape bg-white shadow rounded-circle text-info">
+                            <i className="ni ni-chart-pie-35"></i>
+                          </div>
+                        </div>
+                        <div>
+                          <span className="pl-2 text-sm text-white">
+                            2GB cloud storage
+                          </span>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </CardBody>
+                <CardFooter className="bg-transparent">
+                  <a
+                    className="text-white"
+                    href="#pablo"
+                    onClick={(e) => e.preventDefault()}
+                  >
+                    Request a demo
+                  </a>
+                </CardFooter>
+              </Card>
+                    </Col>
+                    <Col md="6">
                       <Card className="card-pricing bg-white border-0 text-center mb-4">
                         <CardHeader className="bg-transparent">
                           <h6 className="text-uppercase ls-1 py-3 mb-0">
-                            Standard
+                            Premium
                           </h6>
                         </CardHeader>
                         <CardBody>
-                          <div className="display-2">$25</div>
+                          <div className="display-2">$59</div>
                           <span>per month</span>
                           <ul className="list-unstyled my-4">
                             <li className="align-items-center">
-                              <b className="text-primary">20GB</b>{" "}
+                              <b className="text-primary">50GB</b>{" "}
                               <span>File Storage</span>
                             </li>
                             <li className="align-items-center">
-                              <b className="text-primary">15</b>{" "}
+                              <b className="text-primary">100</b>{" "}
                               <span>Users</span>
                             </li>
                             <li className="align-items-center">
-                              <b className="text-primary">false</b>{" "}
+                              <b className="text-primary">Premium</b>{" "}
                               <span>Support</span>
                             </li>
                           </ul>
@@ -101,7 +172,7 @@ function Pricing5() {
                       <Card className="card-pricing bg-white border-0 text-center mb-4">
                         <CardHeader className="bg-transparent">
                           <h6 className="text-uppercase ls-1 py-3 mb-0">
-                            Premium
+                            Uc
                           </h6>
                         </CardHeader>
                         <CardBody>
@@ -153,11 +224,6 @@ function Pricing5() {
                             </li>
                           </ul>
                         </CardBody>
-                        <CardFooter className="bg-transparent">
-                          <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                            Request a demo
-                          </a>
-                        </CardFooter>
                       </Card>
                     </Col>
                     <Col md="6">
@@ -185,11 +251,6 @@ function Pricing5() {
                             </li>
                           </ul>
                         </CardBody>
-                        <CardFooter className="bg-transparent">
-                          <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                            Request a demo
-                          </a>
-                        </CardFooter>
                       </Card>
                     </Col>
                   </Row>
