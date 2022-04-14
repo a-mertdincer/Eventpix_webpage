@@ -1,5 +1,6 @@
 import React from "react";
-
+import googlePlayLogo from "../../assets/img/icons/common/google-play-badge.svg";
+import appStoreLogo from "../../assets/img/icons/common/apple-app-store-badge.svg";
 // reactstrap components
 import {
   Button,
@@ -39,18 +40,27 @@ function Header4() {
                 <Col className="mx-auto" lg="7">
                   <h1 className="video-text">EventPix</h1>
                   <h1 className="display-4 text-white">
-                  Event-based Photo Distribution and Sales Platform that works with AI
+                    Event-based Photo Distribution and Sales Platform that works
+                    with AI
                   </h1>
-                  <Button
-                    className="btn-icon mt-3 mb-sm-0"
-                    color="warning"
-                    href=""
-                  >
-                    <span className="btn-inner--icon">
-                      <i className="ni ni-button-play"></i>
-                    </span>
-                    <span className="btn-inner--text">Click Me</span>
-                  </Button>
+                  <br></br>
+                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                  <img
+                    src={googlePlayLogo}
+                    alt={"logo"}
+                    width={190}
+                    height={50}
+                    margin={25}
+                  />
+                  </a>
+                  <a href="https://www.youtube.com/watch?v=G1IbRujko-A">
+                  <img
+                    src={appStoreLogo}
+                    alt={"logo"}
+                    width={190}
+                    height={54}
+                  />
+                  </a>
                 </Col>
               </Row>
             </Container>

@@ -91,18 +91,20 @@ function DemoNavbar(props) {
               navbar
             >
             <Button
-                    className="btn-icon "
-                    color="warning"
+                    color="default"
+                    type="button"
                     href="http://193.255.88.251:1340/authentication/sign-in"
                   >
                     <span className="btn-inner--icon">
                     <i class="fas fa-sign-in-alt"></i>
                     </span>
-                    <span className="btn-inner--text">LOGIN</span>
+                    <span className="btn-inner--text"
+                    color="white"
+                    >LOGIN</span>
             </Button>
             <Button
-                    className="btn-icon"
-                    color="primary"
+                    color="info"
+                    type="button"
                     href="http://193.255.88.251:1340/authentication/sign-up"
                   >
                     <span className="btn-inner--icon">

@@ -14,7 +14,6 @@ function Feature6() {
           <Col className="mx-md-auto" lg="6" xs="10">
               <img
                 alt="..."
-                className="ml-lg-5"
                 src={require("../../assets/img/ill/stock1.jpg")}
                 width="100%"
               ></img>
